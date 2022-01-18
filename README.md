@@ -51,3 +51,17 @@ Query OK, 1 row affected (0.00 sec)
 ```
 
 Referenece: https://codehandbook.org/python-web-application-flask-mysql/
+
+
+
+## Steps to run the app
+
+#### Install package dependencies with pip3
+```
+pip3 install -r requirements.txt
+```
+
+#### Run the app
+```
+python3 main.py
+```
