@@ -78,3 +78,20 @@ python3 main.py
 ```
 curl http://127.0.0.1:8080/Authenticate?UserName=Admin&Password=admin
 ```
+
+
+### K8s deployment changes to inject env
+```
+      env:
+        - name: db_user
+          value: root
+        - name: db_password
+          value: admin
+        - name: db_name
+          value: flask_test
+        - name: db_host
+          value: localhost
+```
+
+
+NOTE: don't use db_host as localhost instead use GCP instance external IP or VM IP 
