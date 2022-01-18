@@ -30,3 +30,24 @@ mysql> create database flask_test;
 Query OK, 1 row affected (0.00 sec)
 
 ```
+
+### Create table and insert data
+```
+mysql> use flask_test;
+Database changed
+
+mysql> use flask_test;
+Database changed
+mysql> CREATE TABLE User(
+    ->  userId INT NOT NULL AUTO_INCREMENT,
+    ->  userName VARCHAR(100) NOT NULL,
+    ->  password VARCHAR(40) NOT NULL,
+    ->  PRIMARY KEY(userId)
+    ->  );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into User values('1','Admin','admin');
+Query OK, 1 row affected (0.00 sec)
+```
+
+Referenece: https://codehandbook.org/python-web-application-flask-mysql/
