@@ -63,5 +63,10 @@ pip3 install -r requirements.txt
 
 #### Run the app
 ```
+export db_user=root
+export db_password=admin
+export db_name=flask_test
+export db_host=localhost
+
 python3 main.py
 ```
