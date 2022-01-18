@@ -73,3 +73,8 @@ export db_host=localhost
 
 python3 main.py
 ```
+
+#### Test application
+```
+curl http://127.0.0.1:8080/Authenticate?UserName=Admin&Password=admin
+```
