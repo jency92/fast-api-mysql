@@ -25,7 +25,10 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
+```
 
+#### Create database with name flask_test
+```
 mysql> create database flask_test;
 Query OK, 1 row affected (0.00 sec)
 
