@@ -11,6 +11,9 @@ root@instance-1:~# docker ps
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS                                                  NAMES
 aa88ee58e5a9   mysql     "docker-entrypoint.s…"   37 seconds ago   Up 3 seconds   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp   some-mysql
 root@instance-1:~# docker exec -it aa88ee58e5a9 sh
+```
+
+```
 # mysql -u root -p'admin' -h localhost
 mysql: [Warning] Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.
