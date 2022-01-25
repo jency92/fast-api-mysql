@@ -73,6 +73,7 @@ export db_user=root
 export db_password=admin
 export db_name=flask_test
 export db_host=localhost
+sudo docker run -e db_user=root -e db_password=admin -e db_name=flask_test -e db_host=192.168.1.7 fast-api-mysql
 
 python3 main.py
 ```
