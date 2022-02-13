@@ -1,0 +1,7 @@
+uses: docker-build-push
+with:
+  image: jency92/fast-api-mysql
+  registry: docker.pkg.github.com
+  username: ${{ github.actor }}
+  password: ${{ secrets.GITHUB_TOKEN }}
+
