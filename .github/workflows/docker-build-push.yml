@@ -24,7 +24,7 @@ jobs:
       - name: Build image and push to Docker Hub and GitHub Container Registry
         uses: docker/build-push-action@v2
         with:
-          context: ./fast-api-mysql
+          context: .
           tags: | 
             fast-api-mysql:latest
           push: ${{ github.ref == 'refs/heads/main' }}
