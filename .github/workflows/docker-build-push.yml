@@ -23,7 +23,7 @@ jobs:
         with:
           context: .
           tags: | 
-            fast-api-mysql:latest
+            ghcr.io/jency92/fast-api-mysql:latest
           push: ${{ github.ref == 'refs/heads/main' }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
