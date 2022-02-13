@@ -1,4 +1,7 @@
-uses: docker-build-push
+name: docker-build-push
+  on:
+    push:
+    branches: [main]
 with:
   image: jency92/fast-api-mysql
   registry: docker.pkg.github.com
