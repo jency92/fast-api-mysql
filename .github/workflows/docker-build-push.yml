@@ -26,7 +26,7 @@ defaults:
         with:
           context: ./fast-api-mysql
           tags: | 
-             fast-api-mysql:latest
+            fast-api-mysql:latest
           push: ${{ github.ref == 'refs/heads/main' }}
-       - name: Image digest
+      - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
