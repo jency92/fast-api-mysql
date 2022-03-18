@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fast-api-mysql
+  name: fast-api-sql
   labels:
     app: fast-api-mysql
 spec:
